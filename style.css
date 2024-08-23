@@ -1,0 +1,77 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #141111;
+}
+
+.tabela-periodica {
+  display: grid;
+  grid-template-columns: repeat(18, 50px);
+  grid-template-rows: repeat(7, 50px);
+  gap: 10px;
+}
+
+.elemento {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.elemento:hover {
+  transform: scale(1.1);
+}
+
+.numero-atomico {
+  position: relative;
+  top: -40%;
+  right: 35%;
+  font-size: 12px;
+  color: #888;
+}
+
+.mass-atomico {
+  position: relative;
+  top: -60%;
+  left: 40%;
+  font-size: 5px;
+  color: #888;
+}
+
+.simbolo {
+  position: relative;
+  top: -70%;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nome {
+  position: relative;
+  top: -100%;
+  right: 10px;
+  font-size: 9px;
+  color: #888;
+}
+
+/* Cores específicas para cada tipo de elemento */
+
+.gas {
+  background-color: #fff;
+}
+.metal {
+  background-color: #ffcccb;
+}
+
+.gas-nobre {
+  background-color: #add8e6;
+}
+
+/* Adicione mais classes e cores conforme necessário */
